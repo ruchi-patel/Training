@@ -6,16 +6,12 @@ import java.util.Scanner;
 
 public class ExceptionHandling1 {
 
-    public static void main(String[] args)  {
+    public static void main(String[] args) {
         System.out.println("Enter age:");
         Scanner sc = new Scanner(System.in);
         int input = sc.nextInt();
-//        try {
-            validate(input);
-            System.out.println("User is NOT under age..");
-//        } catch (UnderAgeException e) {
-//            System.out.println("User is under age..");
-//        }
+        validate(input);
+        System.out.println("User is NOT under age..");
     }
 
     private static void validate(int input) {
